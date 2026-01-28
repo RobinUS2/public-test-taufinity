@@ -1,0 +1,6 @@
+{
+  "format": "vertical",
+  "aspect_ratio": "9:16",
+  "max_duration_seconds": 90,
+  "caption_template": "{{.Article.Title}} #shorts"
+}

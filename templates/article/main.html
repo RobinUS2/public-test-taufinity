@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "head.html" .}}
+</head>
+<body>
+    {{template "header.html" .}}
+    <main>
+        <article>
+            <h1>{{.Article.Title}}</h1>
+            {{if .Article.Subtitle}}<p class="subtitle">{{.Article.Subtitle}}</p>{{end}}
+            <div class="meta">
+                <time datetime="{{.Article.PublishedAt}}">{{formatDate .Article.PublishedAt}}</time>
+                {{if .Site.Name}}<span class="site">{{.Site.Name}}</span>{{end}}
+            </div>
+            <div class="content">
+                {{.Translation.Content | safeHTML}}
+            </div>
+        </article>
+    </main>
+    {{template "footer.html" .}}
+</body>
+</html>

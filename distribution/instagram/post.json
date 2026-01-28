@@ -1,0 +1,6 @@
+{
+  "caption_template": "{{.Article.Title}} - Read more at {{.Site.URL}}",
+  "hashtags": ["#article", "#content"],
+  "image_aspect_ratio": "1:1",
+  "max_caption_length": 2200
+}
